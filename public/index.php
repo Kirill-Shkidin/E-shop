@@ -43,20 +43,18 @@ include_once "../models/db_goods.php";
       <?php
       $goods = goodsAll($connect);
       print_r($goods);
-//      if ($goods) {
-//        foreach ($goods as $good) {
-//          ?>
-<!--          <div class="good">-->
-<!--            <a href="good.php?id=--><?//= $good['id'] ?><!--">-->
-<!--              <img src="--><?//= $good['src_small'] ?><!--" alt="--><?//= $good['name'] ?><!--"-->
-<!--                   title="--><?//= $good['name'] ?><!--"></a>-->
-<!--            <h3 class="good-name"><a href="good.php?id=--><?//= $good['id'] ?><!--">--><?//= $good['name'] ?><!--</a></h3>-->
-<!--            <p class="price">$--><?//= $good['price'] ?><!--</p>-->
-<!--            <p class="add-to-basket"><a href="#" title="Добавить в корзину">Купить</a></p>-->
-<!--          </div>-->
-<!--        --><?// }
-//      }
-//      ?>
+      if ($goods) :
+        foreach ($goods as $good):?>
+          <div class="good">
+            <a href="good.php?id=<?= $good['id'] ?>">
+              <img src="<?= $good['src_small'] ?>" alt="<?= $good['name'] ?>"
+                   title="<?= $good['name'] ?>"></a>
+            <h3 class="good-name"><a href="good.php?id=<?= $good['id'] ?>"><?= $good['name'] ?></a></h3>
+            <p class="price">$<?= $good['price'] ?></p>
+            <p class="add-to-basket"><a href="#" title="Добавить в корзину">Купить</a></p>
+          </div>
+        <? endforeach;
+      endif; ?>
     </div>
   </div>
 </section>
