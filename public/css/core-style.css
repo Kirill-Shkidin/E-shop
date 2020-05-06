@@ -1,0 +1,179 @@
+/* :: :: 1.0 Import Fonts */
+@font-face {
+  font-family: "poppinsBold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsSemiBold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsReg";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppinsLight";
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "camptonMedium";
+  src: url("../fonts/Campton/Campton-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* :: 2.0 Import All CSS (from frameworks)*/
+/* :: 3.0 Base CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppinsReg";
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #242424;
+  line-height: 1.3;
+  font-family: "poppinsLight";
+  font-weight: 400;
+}
+
+p {
+  color: #131212;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+a {
+  -webkit-transition: all 500ms ease 0s;
+  transition: all 500ms ease 0s;
+  text-decoration: none;
+  outline: 0 solid transparent;
+  color: #131212;
+  font-weight: 400;
+}
+a:hover, a:focus {
+  -webkit-transition: all 500ms ease 0s;
+  transition: all 500ms ease 0s;
+  text-decoration: none;
+  outline: 0 solid transparent;
+  color: #131212;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+/* :: 4.0 Header Area CSS */
+header {
+  height: 110px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px #E2E2E2 solid;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.logo {
+  font-family: "camptonMedium";
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  padding-right: 24px;
+}
+.logo ::first-letter {
+  color: #FBB03B;
+}
+
+.container {
+  padding: 0 160px;
+  width: 100%;
+  display: flex;
+}
+
+.menu, .right-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "poppinsSemiBold";
+  font-size: 14px;
+}
+.menu li:not(:first-child):not(:last-child), .right-menu li:not(:first-child):not(:last-child) {
+  padding: 0 35px;
+}
+
+/* :: 5.0 Breadcrumbs Area CSS */
+.breadcrumbs {
+  margin-top: 110px;
+  font-size: 13px;
+  color: #B2B2B2;
+}
+.breadcrumbs ul {
+  padding-top: 30px;
+  display: flex;
+}
+.breadcrumbs ul li:not(:first-child):not(:last-child) {
+  padding: 0 8px;
+}
+.breadcrumbs ul a {
+  color: #B2B2B2;
+}
+
+.mainContent {
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.products {
+  width: 100%;
+  margin-left: 35px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topSection .controls span {
+  padding-left: 40px;
+}
+.topSection h1 span {
+  color: #B2B2B2;
+}
+
+/*# sourceMappingURL=core-style.css.map */
